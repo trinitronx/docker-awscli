@@ -25,4 +25,13 @@ To run, simply pass your AWS CLI command as the `CMD` option to `docker run`.  F
     docker run -ti --rm -v ~/.aws:/root/.aws --entrypoint=/bin/bash returnpath/awscli
 
 
+## License
+
+This project is simply a packaging script for the [`awscli`][awscli-github] tool.  As such, nothing in this repository is "novel", or "non-obvious".
+
+However, the upstream tool ["`awscli`"][awscli-license], is released under the [Apache 2.0 License][apache-2-license]. The text of this tool's license is included here to avoid confusion.
+
 [1]: https://github.com/sourcegraph/docker-awscli
+[awscli-github]: https://github.com/aws/aws-cli
+[apache-2-license]: https://choosealicense.com/licenses/apache-2.0/
+[awscli-license]: https://github.com/aws/aws-cli/blob/develop/LICENSE.txt
